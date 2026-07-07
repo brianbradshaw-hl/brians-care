@@ -46,6 +46,33 @@
     .contact-page-content .section-eyebrow {
       margin-bottom: 1rem;
     }
+    .spruce-cta-block {
+      margin-bottom: 2.5rem;
+    }
+    .spruce-cta-block .section-eyebrow {
+      margin-bottom: 0.9rem;
+    }
+    .spruce-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--warm);
+      border-color: rgba(245,239,230,0.55);
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
+    }
+    .spruce-cta:hover {
+      background: rgba(245,239,230,0.1);
+      border-color: rgba(245,239,230,0.8);
+      transform: translateY(-1px);
+    }
+    .spruce-cta:active {
+      background: rgba(245,239,230,0.18);
+      border-color: var(--warm);
+      transform: translateY(0);
+    }
+    .spruce-cta svg {
+      flex-shrink: 0;
+    }
     .contact-page-content .section-headline {
       color: var(--warm);
       margin-bottom: 0.75rem;
@@ -147,6 +174,18 @@
   <!-- CONTACT FORM -->
   <section style="background:var(--ink);">
     <div class="contact-page-content">
+
+      <div class="spruce-cta-block reveal">
+        <p class="section-eyebrow">Current clients</p>
+        <a href="https://spruce.care/brianbradshaw" class="btn-secondary spruce-cta">
+          <svg width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M13.7143 4.57143C9.50644 4.57143 6.09525 7.98263 6.09525 12.1905C6.09525 12.2414 6.09616 12.292 6.09707 12.3426C6.58896 12.2429 7.09791 12.1905 7.61905 12.1905H18.2857C22.4427 12.1905 25.8219 15.5197 25.9029 19.6575C29.3815 18.9522 32 15.8772 32 12.1905V4.57143H13.7143Z" fill="currentColor"/>
+            <path d="M25.903 19.6574C25.8219 15.5197 22.4427 12.1905 18.2858 12.1905H7.61909C7.09795 12.1905 6.58899 12.2429 6.09711 12.3425C6.17817 16.4803 9.55738 19.8095 13.7143 19.8095H24.381C24.9021 19.8095 25.4111 19.7571 25.903 19.6574Z" fill="currentColor"/>
+            <path d="M24.381 19.8095H13.7143C9.55733 19.8095 6.17813 16.4803 6.09707 12.3425C2.61851 13.0478 0 16.1228 0 19.8095V27.4285H18.2857C22.4936 27.4285 25.9048 24.0174 25.9048 19.8095C25.9048 19.7586 25.9038 19.708 25.9029 19.6574C25.411 19.7571 24.9021 19.8095 24.381 19.8095Z" fill="currentColor"/>
+          </svg>
+          Communicate via Spruce
+        </a>
+      </div>
 
       <p class="section-eyebrow reveal">Get in touch</p>
       <h1 class="section-headline reveal">Send a message.</h1>
